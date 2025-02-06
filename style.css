@@ -1,0 +1,15 @@
+td {
+    border: 5px solid black;
+}
+th {
+    border: 5px solid black;
+}
+h1 {
+    font-style: italic;
+}
+#first {
+    background-color: aqua;
+}
+.red {
+    background-color: rgb(98, 98, 221);
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        div,
+        span,
+        #abcd {
+            color: rgb(206, 164, 102);
+            background-color: rgb(20, 219, 219);
+        }
+
+        /* child selector */
+        div>p {
+            color: aqua;
+            background-color: black;
+        }
+
+        /* descendant selector */
+        div article {
+            color: azure;
+            background-color: black;
+        }
+
+        /* for selecting all */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* attribute selector */
+        [data-x=a] {
+            background-color: black;
+        }
+
+        /* for changing the colour of visited site */
+        a:visited {
+            color: rgb(218, 42, 42);
+        }
+
+        /* for changing the colour of not visited site */
+        a:link {
+            color: blueviolet;
+        }
+
+        /* jab link pe click kare tabke liye */
+        a:active {
+            background-color: blanchedalmond;
+        }
+
+        /* jab link pe arror leke jaye */
+        a:hover {
+            background-color: aqua;
+        }
+
+        /* if p is first child */
+        p:first-child {
+            font-size: x-large;
+        }
+
+        .red {
+            margin: 10px;
+            border: 20px solid black;
+            padding: 20px;
+            height: 100px;
+            box-sizing: border-box;
+        }
+    </style>
+    <link rel="stylesheet" href="anshal.css">
+</head>
+
+<body>
+    <div>
+        <nav>
+            <aside class="red">nothing on it</aside>
+            <aside class="red">also nothing on it</aside>
+        </nav>
+    </div>
+    <a href="http://www.facebook.com">Facebook</a>
+    <div data-x="a">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae porro nulla eius velit quia atque possimus
+        laboriosam iste, sequi quo quasi incidunt repellat expedita natus architecto error vitae ipsam esse.
+    </div>
+    <span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit odio distinctio earum, veniam perferendis, et
+        soluta facilis similique at, laboriosam excepturi officia eos non a. Temporibus molestiae et laudantium aliquam?
+    </span>
+    <p style="color: brown;">for inline CSS it can only be done at one</p>
+    <p id="abcd">for internal CSS it can be done at all</p>
+    <p id="ansh">for external CSS it is attached to other file</p>
+    <div>
+        <p>para inside div</p>
+    </div>
+    <div>
+        <nav>
+            <article>
+                i am article
+            </article>
+        </nav>
+    </div>
+</body>
+
+</html>
